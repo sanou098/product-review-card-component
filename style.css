@@ -67,8 +67,9 @@
     color: var(--clr-dark-grayish-neutral);
     background-color: var(--clr-cream-primary);
     display: grid;
-    place-content: center;
-    margin: 1rem;
+    place-items: center;
+   
+    height: 100vh;
   }
   .flex{
     display: flex;
@@ -86,7 +87,7 @@
     .product{
       display: grid;
       grid-template-columns: 1fr 1fr;
-      margin-top: 7.75rem;
+     
     }
   }
   .product-content{
@@ -124,7 +125,7 @@
   }
   .button{
     padding:0.5rem 1.5rem;
-    font-size: 1.025rem;
+    font-size: 0.9rem;
     font-weight: 700;
     background-color: var(--clr-dark-primary);
     color: var(--clr-white-neutral);
@@ -133,13 +134,15 @@
     display: inline-flex;
     justify-content: center;
     gap: 0.75rem;
+    
   }
   .button:is(:hover, :focus){
     background-color: var(--clr-darker-primary);
   }
   .button[data-icon="shopping-cart"]::before{
     content:'';
-    background-image: url(images/icon-cart.svg);
+    background-image: url(icon-cart.svg);
+    border: none;
     width: 15px;
     height: 16px;
     margin-top: 5px;
